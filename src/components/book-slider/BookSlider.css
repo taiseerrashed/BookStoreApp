@@ -1,0 +1,101 @@
+.book-slider-container {
+    width: 100%;
+    display: flex;
+    position: relative;
+    overflow-x: hidden;
+    padding: 10px 20px 20px 20px;
+}
+.book-slider-arrow-left,
+.book-slider-arrow-right {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: #ffffff;
+    background-color: var(--primary-color);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+    transition: 0.3s;
+    cursor: pointer;
+    font-size: 20px;
+}
+.book-slider-arrow-left {
+    left: 10px;
+}
+.book-slider-arrow-right {
+    right: 10px;
+}
+.book-slider-arrow-left:hover,
+.book-slider-arrow-right:hover {
+    background-color: #29b0e6;
+}
+
+.book-slider-wrapper {
+    display: flex;
+    transition: 0.5s all ease;
+}
+.book-slide-item {
+    border: 1px solid var(--primary-color);
+    background-color: snow;
+    padding: 10px;
+    margin: 0 10px ;
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+.book-slide-item-img {
+    width: 60%;
+    object-fit: contain;
+    cursor: pointer;
+}
+.book-slide-item-title {
+    font-size: 18px;
+    text-align: center;
+}
+.book-slide-item-price {
+    font-size: 20px;
+    font-weight: 500;
+    color: crimson;
+}
+.book-slider-icons-wrapper {
+    width: 100%;
+    text-align: center;
+    padding-top: 5px;
+    border-top: 1px solid var(--primary-color);
+}
+.book-slider-icons-wrapper i {
+    font-size: 22px;
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+/* Rating */
+.rating {
+    color: #f5ab11;
+}
+.rating i {
+    font-size: 21px;
+    margin-right: 4px;
+}
+.rating span:first-of-type {
+    font-weight: 500;
+    margin: 0 12px;
+    color: #f5ab11;
+}
+.rating span:last-of-type {
+    color: #990000;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+@media (max-width: 300px) {
+    .book-slide-item {
+        width: 270px;
+    }
+}

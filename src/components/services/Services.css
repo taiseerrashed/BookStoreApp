@@ -1,0 +1,44 @@
+.services {
+    padding: 32px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.services .service-item {
+    padding: 7px;
+    font-size: 17px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #2c3e50;
+    border: 1px solid var(--primary-color);
+    border-radius: 20px;
+    width: 20%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.services .service-item i {
+    font-size: 30px;
+}
+.service-item:hover {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+@media (max-width: 920px) {
+    .services {
+        flex-wrap: wrap;
+        padding: 30px 15px;
+    }
+    .services .service-item {
+        width: 40%;
+        margin-bottom: 20px;
+    }
+}
+@media (max-width: 520px) {
+    .services .service-item {
+        width: 90%;
+        font-size: 25px;
+    }
+}
